@@ -1,0 +1,26 @@
+[
+    {
+    "content":"Последний раз видели на Бакунина 115",
+    "header":"Кузя",
+    "type": "Мейн-кун",
+    "age": "7",
+    "email":"kuzya@ya.ru",
+    "img":"cat.png"
+    },
+    {
+    "content":"Последний раз видели вон там",
+    "header":"Котэ",
+    "type": "Мейн-кун",
+    "age": "7",
+    "email":"kuzya@ya.ru",
+    "img":"cat.png"
+    },
+    {
+    "content":"Последний раз видели около шаурмячной",
+    "header":"Чара",
+    "type": "Манчкин",
+    "age": "7",
+    "email":"chara@ya.ru",
+    "img":"chara.jpg"
+    }
+]
