@@ -1,26 +1,66 @@
 [
     {
-    "content":"Последний раз видели на Бакунина 115",
+    "id": "1",
+    "header":"Лорд",
+    "type": "Мейн-кун",
+    "age": "6",
+    "src": "cat11.jpg"
+    },
+    {
+    "id": "2",
     "header":"Кузя",
     "type": "Мейн-кун",
-    "age": "7",
-    "email":"kuzya@ya.ru",
-    "img":"cat.png"
+    "age": "0.6",
+    "src": "cat12.jpg"
     },
     {
-    "content":"Последний раз видели вон там",
-    "header":"Котэ",
-    "type": "Мейн-кун",
-    "age": "7",
-    "email":"kuzya@ya.ru",
-    "img":"cat.png"
+    "id": "3",
+    "header":"Мурка",
+    "type": "Шотландская вислоухая",
+    "age": "3",
+    "src": "cat21.jpg"
     },
     {
-    "content":"Последний раз видели около шаурмячной",
-    "header":"Чара",
+    "id": "4",
+    "header":"Марс",
+    "type": "Шотландская вислоухая",
+    "age": "0.3",
+    "src": "cat22.jpeg"
+    },
+    {
+    "id": "5",
+    "header":"Тигра",
+    "type": "Бенгальская",
+    "age": "5",
+    "src": "cat31.jpeg"
+    },
+    {
+    "id": "6",
+    "header":"Эльф",
+    "type": "Ориентальная",
+    "age": "2",
+    "src": "cat41.jpeg"
+    },
+    {
+    "id": "7",
+    "header":"Прикол",
+    "type": "Ориентальная",
+    "age": "4",
+    "src": "cat42.jpg"
+    },
+    {
+    "id": "8",
+    "header":"Буран",
     "type": "Манчкин",
-    "age": "7",
-    "email":"chara@ya.ru",
-    "img":"chara.jpg"
+    "age": "5",
+    "src": "cat51.jpg"
+    },
+    {
+    "id": "9",
+    "header":"Шерсть",
+    "type": "Манчкин",
+    "age": "0.3",
+    "src": "cat52.jpg"
     }
+    
 ]

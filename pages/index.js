@@ -3,51 +3,11 @@ import Head from 'next/head'
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/captioned.css";
 import styles from '../styles/Home.module.css'
-import List from './List'
-
-const buttonStyle = {
-  padding: "15px",
-  borderRadius: "50%",
-  background: "red",
-  opacity: 0.7,
-  fontSize: "20px"
-};
-
-const headerStyle = {
-  color:'white',
-  position:"absolute",
-  zIndex:4,
-  top:'30%',
-  left:'40%'
-}
-
-const contentStyle = {
-  color:'white',
-  textAlign:"center",
-  top:'50%',
-  left:'25%',
-  position:"absolute",
-  zIndex:4
-}
   
-const bgImg = {
-  position: "fixed",
-  zIndex: 3,
-  left: 0,
-  top: 0,
-  width: "100%",
-  height: "100%"
+const cat = {
+  width: "150px",
+  height: "150px"
 };
-
-function Animal(props){
-    if(!props.data) return <p>Loading</p>
-    const {header,content,img} = props.data;
-    return (
-        <ul>
-          <List value = {header}/>
-        </ul>
-    );
-}
 
 export default function Home() {
   const [animals,setAnimals] = React.useState([]);
@@ -108,21 +68,17 @@ export default function Home() {
         {
           animals.filter((val) => {
             let tmp;
-            console.log("1 " + val.header);
-            type.map((value) => {
+            type.filter((value) => {
 
               switch (inputType){
-                case "Любая": 
-                console.log("Совпало");
+                case "Любая":
                   tmp = val;
                 case value.content:
                   if(value.content == val.type){
-                    console.log("Записываем");
                     tmp = val;
                   }
               }
             })
-            console.log("2 " + val.header);
             return tmp;
             
           }).filter((val) => {
@@ -139,8 +95,8 @@ export default function Home() {
             else if(val.age.toLowerCase().includes(inputAge.toLowerCase())){
               return val;
             }
-          }).map((val, key)=>{
-            return <li>{val.header + ", " + val.age}</li>
+          }).map((val)=>{
+            return<li key={val.id}><div>{val.header + " " +val.age}</div><img style={cat} src={val.src}></img></li>
           })
         }
         </ul>
